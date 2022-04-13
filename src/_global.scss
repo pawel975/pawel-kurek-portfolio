@@ -1,0 +1,28 @@
+@use './variables.scss' as *;
+
+// Custom scroll bar
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.575rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    // background: lighten($color: $clr-primary-dark , $amount: 5%);
+    background: lighten($color: $clr-primary-dark , $amount: 5%)
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darken($color: $clr-primary-dark , $amount: 10%);
+    border-radius: 10rem;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    background: darken($color: $clr-primary-dark , $amount: 20%);
+
+  }

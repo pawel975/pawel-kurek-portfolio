@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+button {
+  background-color: transparent;
+  border: none;
+  transition: 0.15s ease-in;
+  color: rgba(244, 244, 244, 0.9);
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(0.2rem) translateX(-0.2rem);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}/*# sourceMappingURL=NavButton.css.map */
