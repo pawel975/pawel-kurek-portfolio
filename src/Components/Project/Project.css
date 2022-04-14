@@ -9,7 +9,7 @@ div.project {
   flex-direction: row;
   font-size: 1.25rem;
   color: #3d348b;
-  gap: 1rem;
+  gap: 2rem;
 }
 div.project header {
   font-family: "Montserrat", sans-serif;

@@ -1,6 +1,9 @@
+@use '../../variables' as *;
 
 div.slider {
+    position: relative;
     width: 35rem;
     flex-shrink: 0;
     aspect-ratio: 16/9;
+
 }

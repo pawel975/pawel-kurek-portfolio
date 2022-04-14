@@ -32,6 +32,27 @@
     font-size: 8rem;
   }
 }
+#landing-page .landing-page__welcome-heading h1 {
+  font-size: 4rem;
+}
+#landing-page .landing-page__welcome-heading h1 span {
+  color: #fe9f27;
+}
+@media (min-width: 125rem) {
+  #landing-page .landing-page__welcome-heading h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 150rem) {
+  #landing-page .landing-page__welcome-heading h1 {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 200rem) {
+  #landing-page .landing-page__welcome-heading h1 {
+    font-size: 9rem;
+  }
+}
 #landing-page .landing-page__logo {
   height: clamp(15rem, 40%, 70rem);
   color: rgba(237, 240, 248, 0.3);

@@ -8,7 +8,7 @@ div.project {
     flex-direction: row;
     font-size: $fs-300;
     @include fontColor($clr-primary-dark, 1);
-    gap: 1rem;
+    gap: 2rem;
 
     header {
         font-family: $ff-heading;

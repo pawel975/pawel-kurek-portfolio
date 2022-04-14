@@ -26,7 +26,7 @@ const projects = [
     {
         id: 1,  
         name: 'WeatherApp',
-        description: "Weather app with hours and days forecast with many  details",
+        description: "Weather app with hours and days forecast, get info about temperature, weather and more details stuff.",
         images: [
             waHome,
         ],

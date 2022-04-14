@@ -1,17 +1,29 @@
 @use '../../variables.scss' as *;
 
 a.nav-link {
-    padding-block: .3rem;
+    padding: .5rem;
     font-size: $fs-200;
     font-weight: 700;
     list-style: none;
     text-decoration: none;
-    transition: 0.15s ease-in;
+    transition: 0.1s ease-in-out;
     color: lighten($clr-accent, 10%);
     cursor: pointer;
 
+    @media (min-width: 125rem) { // 2000 px
+        font-size: $fs-400;
+    }
+
+    @media (min-width: 150rem) { // 2400 px
+        font-size: $fs-500;
+    }
+
+    @media (min-width: 200rem) { // 3200 px
+        font-size: $fs-600;
+    }
+
     &:hover {
-        transform: translateY(0.1rem) translateX(-0.1rem);
-        border-bottom: 1px solid lighten($clr-accent, 10%);
+        // transform: translateY(0.1rem) translateX(-0.1rem);
+        box-shadow: inset 0px 0px 5px 2px lighten($clr-accent, 10%);
     }
 }
