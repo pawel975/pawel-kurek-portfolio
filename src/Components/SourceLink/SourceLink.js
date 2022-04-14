@@ -1,9 +1,8 @@
+import "./SourceLink.scss";
 
-const SourceLink = () => {
+const SourceLink = ({link, name}) => {
     return (
-        <div className="link-button">
-
-        </div>
+        <a target="_blank" href={link} className="source-link" rel="noreferrer">{name}</a>
     );
 };
 

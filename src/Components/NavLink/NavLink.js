@@ -2,7 +2,7 @@ import './NavLink.scss';
 
 const NavLink = ({text, id}) => {
     return (
-        <a href={`#${id}`}>{text}</a>
+        <a className='nav-link' href={`#${id}`}>{text}</a>
     )
 }
 

@@ -2,7 +2,10 @@
 
 #projects-page {
     width: 100%;
-    height: 100vh;
+    padding-block: 7rem; // Nav has height of 4 rem
     @include bgColor($clr-primary-light, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     
 }

@@ -1,0 +1,19 @@
+@use '../../variables.scss' as *;
+
+div.project {
+    width: clamp(15rem, 60%, 90rem);
+    height: fit-content;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: $fs-300;
+    @include fontColor($clr-primary-dark, 1);
+    gap: 1rem;
+
+    header {
+        font-family: $ff-heading;
+        font-size: $fs-400;
+        font-weight: 700;
+        @include fontColor($clr-primary-dark, 1);
+    }
+}

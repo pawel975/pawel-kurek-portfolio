@@ -1,17 +1,19 @@
+import SourceLink from '../SourceLink/SourceLink';
+import './ProjectInfo.scss';
 
-const ProjectInfo = ({description, techStack, githubLink, liveVersionLink}) => {
+const ProjectInfo = ({name, description, techStack, githubLink, liveVersionLink}) => {
 
-    const allTechs = techStack.map(tech => (
-        <div className="tech">
-            <span>{tech.name}</span>
-            <img src={tech.icon} alt="technology icon"/>
-        </div>
-    ))
+    const allTechs = techStack.map(tech => tech)
 
     return (
         <div className="project-info">
-            <header>{description}</header>
-            {allTechs}
+            <header>{name}</header>
+            <p className='description'>{description}</p>
+            <div className="tech">{allTechs}</div>
+            <div className='links'>
+                <SourceLink link={githubLink} name={"Github"}/>
+                <SourceLink link={liveVersionLink} name={"Live version"}/>
+            </div>
         </div>
     );
 };

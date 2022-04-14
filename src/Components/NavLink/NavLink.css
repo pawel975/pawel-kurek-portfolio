@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-button {
-  background-color: transparent;
-  border: none;
+a.nav-link {
+  padding-block: 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
   transition: 0.15s ease-in;
-  color: rgba(244, 244, 244, 0.9);
+  color: #fe9f27;
   cursor: pointer;
 }
-button:hover {
-  transform: translateY(0.2rem) translateX(-0.2rem);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}/*# sourceMappingURL=NavButton.css.map */
+a.nav-link:hover {
+  transform: translateY(0.1rem) translateX(-0.1rem);
+  border-bottom: 1px solid #fe9f27;
+}/*# sourceMappingURL=NavLink.css.map */

@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 nav {
   width: 100%;
-  height: 10%;
+  height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
   padding-inline: 1.5rem;
-  background-color: #3d348b;
+  background-color: rgba(61, 52, 139, 0.85);
   display: flex;
   justify-content: flex-end;
   align-items: center;

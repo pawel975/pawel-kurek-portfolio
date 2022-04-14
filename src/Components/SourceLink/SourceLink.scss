@@ -1,0 +1,12 @@
+@use '../../variables.scss' as *;
+
+a.source-link {
+    text-decoration: none;
+    @include fontColor($clr-primary-light, 1);
+    @include bgColor($clr-accent, 1);
+    font-weight: 900;
+    // font-family: $ff-heading;
+    padding: 0.5rem;
+    border-radius: 50rem;
+    font-size: $fs-300;
+}
