@@ -3,14 +3,27 @@
 nav {
     z-index: 1;
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     padding-inline: 1.5rem;
-    @include bgColor(black, 0.05);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+
+    .toggle-menu-modal-button {
+        background: transparent;
+        border: none;
+        z-index: 2;
+    }
+
+    .toggle-menu-modal-icon {
+        cursor: pointer;
+        color: $clr-accent;
+        width: 3rem;
+        height: 3rem;
+
+    }
 }

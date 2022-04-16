@@ -9,20 +9,18 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    // background: lighten($color: $clr-primary-dark , $amount: 5%);
-    background: lighten($color: $clr-primary-dark , $amount: 5%)
+    background: lighten($color: $clr-accent , $amount: 20%);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: darken($color: $clr-primary-dark , $amount: 10%);
+    background: darken($color: $clr-accent , $amount: 5%);
     border-radius: 10rem;
 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    background: darken($color: $clr-primary-dark , $amount: 20%);
+    background: darken($color: $clr-accent , $amount: 10%);
 
   }

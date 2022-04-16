@@ -2,13 +2,13 @@
 
 a.nav-link {
     padding: .5rem;
-    font-size: $fs-200;
+    font-size: $fs-300;
     font-weight: 700;
     list-style: none;
     text-decoration: none;
+    text-align: center;
     transition: 0.1s ease-in-out;
     color: $clr-accent;
-    border: 2px solid $clr-accent;
     border-radius: 0.5rem;
     cursor: pointer;
 
@@ -24,8 +24,20 @@ a.nav-link {
         font-size: $fs-600;
     }
 
+    @keyframes tilt {
+        0% {
+            transform: scale(1.0);
+        }
+        5% {
+            transform: scale(1.02);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
     &:hover {
-        // transform: translateY(0.1rem) translateX(-0.1rem);
+        animation: tilt alternate 0.5s;
         color: $clr-primary-light;
         background-color: $clr-accent;
     }

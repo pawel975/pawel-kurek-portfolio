@@ -9,9 +9,10 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 10rem;
 
     * {
-        width: clamp(15rem, 40%, 70rem);
+        width: clamp(15rem, 100%, 70rem);
     }
 
     .landing-page__welcome-heading {

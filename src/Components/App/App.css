@@ -40,6 +40,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: inherit;
 }
 
 /* A elements that don't have a class get default styles */
@@ -91,19 +92,18 @@ select {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #453b9e;
+  background: #feb65a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2d2666;
+  background: #d87901;
   border-radius: 10rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  background: #1c1841;
+  background: #be6b01;
 }
 
 .app {

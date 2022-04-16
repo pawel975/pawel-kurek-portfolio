@@ -8,14 +8,15 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 10rem;
 }
 #landing-page * {
-  width: clamp(15rem, 40%, 70rem);
+  width: clamp(15rem, 100%, 70rem);
 }
 #landing-page .landing-page__welcome-heading {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
-  color: #edf0f8;
+  color: #efefec;
 }
 @media (min-width: 125rem) {
   #landing-page .landing-page__welcome-heading {
@@ -55,5 +56,5 @@
 }
 #landing-page .landing-page__logo {
   height: clamp(15rem, 40%, 70rem);
-  color: rgba(237, 240, 248, 0.3);
+  color: rgba(239, 239, 236, 0.3);
 }/*# sourceMappingURL=LandingPage.css.map */

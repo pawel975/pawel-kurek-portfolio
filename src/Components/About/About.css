@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+#about-page {
+  height: 100vh;
+  width: 100%;
+  background-color: #761e38;
+  padding: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#about-page .about-page__biography {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#about-page .about-page__biography header p {
+  font-size: 4rem;
+  color: #efefec;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=About.css.map */

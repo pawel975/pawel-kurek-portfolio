@@ -1,0 +1,35 @@
+@use '../../variables' as *;
+
+div.popup-container {
+    z-index: 3;
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1rem 2rem;
+    text-align: left;
+    line-height: 100%;
+    font-weight: 700;
+    color: darken($clr-popup, 30%);
+    background: lighten($clr-popup, 30%);
+    border-radius: 0.5rem;
+    border-top: 5px solid darken($clr-popup, 20%);
+    animation: 3s showPopup;
+    opacity: 0;
+    
+    @keyframes showPopup {
+        0% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
