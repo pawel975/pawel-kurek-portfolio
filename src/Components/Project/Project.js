@@ -5,7 +5,10 @@ import './Project.scss';
 const Project = ({key, id, name, description, images, techStack, githubLink, liveVersionLink}) => {
     return (
         <div key={key} id={id} className="project">
-            <Slider images={images} />
+            <Slider 
+                images={images}
+                liveVersionLink={liveVersionLink}
+            />
             <ProjectInfo
                 name={name}
                 description={description} 

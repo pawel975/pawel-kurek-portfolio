@@ -8,13 +8,33 @@
   flex-direction: row;
   gap: 1rem;
 }
-#about-page .about-page__biography {
+#about-page header.about-page__biography {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-#about-page .about-page__biography header p {
+#about-page header.about-page__biography h2 {
   font-size: 4rem;
   color: #efefec;
   font-family: "Montserrat", sans-serif;
+}
+#about-page header.about-page__biography p {
+  color: #efefec;
+  font-size: 1.25rem;
+}
+#about-page header.about-page__biography p strong {
+  color: #F18701;
+  font-weight: 900;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+#about-page header.about-page__biography p a {
+  color: #8fb79b;
+}
+#about-page .about-page__icon {
+  width: 100%;
+  height: 100%;
+  color: rgba(239, 239, 236, 0.3);
 }/*# sourceMappingURL=About.css.map */

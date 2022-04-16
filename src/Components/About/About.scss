@@ -1,6 +1,7 @@
 @use '../../variables' as *;
 
 #about-page {
+
     height: 100vh;
     width: 100%;
     background-color: $clr-secondary-dark;
@@ -9,18 +10,38 @@
     flex-direction: row;
     gap: 1rem;
 
-    .about-page__biography {
+    header.about-page__biography {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
 
-        header {
+        h2 {
+            font-size: $fs-700;
+            color: $clr-primary-light;
+            font-family: $ff-heading;
+        }
 
-            p {
-                font-size: $fs-700;
-                color: $clr-primary-light;
-                font-family: $ff-heading;
+        p {
+            color: $clr-primary-light;
+            font-size: $fs-300;
+
+            strong {
+                color: $clr-accent;
+                font-weight: 900;
+                text-decoration-style: dotted;
+            }
+
+            a {
+                color: lighten($clr-popup, 10%);
             }
         }
+    }
+
+    .about-page__icon {
+        width: 100%;
+        height: 100%;
+        @include fontColor($clr-primary-light, 0.3);
     }
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 div.project {
-  width: clamp(15rem, 60%, 90rem);
+  width: clamp(15rem, 80%, 90rem);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

@@ -16,8 +16,11 @@
     }
 
     .landing-page__welcome-heading {
+
+        width: 100%;
         font-family: $ff-heading;
         font-size: $fs-600;
+
         @include fontColor($clr-primary-light, 1);
 
         @media (min-width: 125rem) { // 2000 px

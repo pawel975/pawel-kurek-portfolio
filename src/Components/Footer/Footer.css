@@ -13,7 +13,7 @@ footer#contact header.contact-header {
   align-items: flex-start;
   width: 100%;
 }
-footer#contact header.contact-header p {
+footer#contact header.contact-header h2 {
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
   color: #efefec;

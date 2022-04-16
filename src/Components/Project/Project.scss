@@ -1,7 +1,7 @@
 @use '../../variables.scss' as *;
 
 div.project {
-    width: clamp(15rem, 60%, 90rem);
+    width: clamp(15rem, 80%, 90rem);
     height: fit-content;
     margin-inline: auto;
     display: flex;

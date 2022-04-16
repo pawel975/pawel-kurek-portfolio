@@ -1,10 +1,17 @@
 import '../Slider/Slider.scss';
 
-const Slider = ({images}) => {
+const Slider = ({images, liveVersionLink}) => {
+
     return (
         <>
             <div className="slider">
-                <img src={images[0]} alt="application"/>
+                <a 
+                    href={liveVersionLink}
+                    target='_blank'
+                    rel="noreferrer"
+                >
+                    <img src={images[0]} alt="application"/>
+                </a>
             </div>
         </>
     )

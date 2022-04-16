@@ -19,6 +19,9 @@ const ProjectsPage = () => {
 
     return(
         <section id="projects-page">
+            <header>
+                <h2>Selected personal projects</h2>
+            </header>
             {allProjects}
         </section>
     )

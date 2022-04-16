@@ -21,7 +21,7 @@ const Footer = () => {
     return (
         <footer id='contact'>
             <header className='contact-header'>
-                <p>Contact me</p>
+                <h2>Contact me</h2>
                 <ContactIcon className='contact-icon'/>
             </header>
             <div className='contact-links'>
