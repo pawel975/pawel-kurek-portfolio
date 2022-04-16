@@ -6,6 +6,7 @@ const Nav = () => {
         <nav>
             <NavLink id="landing-page" text={"Home"}/>
             <NavLink id="projects-page" text={"Projects"}/>
+            <NavLink id="contact" text={"Contact"}/>
         </nav>
     )
 }

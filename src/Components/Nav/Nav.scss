@@ -8,7 +8,7 @@ nav {
     top: 0;
     left: 0;
     padding-inline: 1.5rem;
-    @include bgColor($clr-primary-dark, 0.85);
+    @include bgColor(black, 0.05);
     display: flex;
     justify-content: flex-end;
     align-items: center;

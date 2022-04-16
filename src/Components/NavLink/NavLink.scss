@@ -7,7 +7,9 @@ a.nav-link {
     list-style: none;
     text-decoration: none;
     transition: 0.1s ease-in-out;
-    color: lighten($clr-accent, 10%);
+    color: $clr-accent;
+    border: 2px solid $clr-accent;
+    border-radius: 0.5rem;
     cursor: pointer;
 
     @media (min-width: 125rem) { // 2000 px
@@ -24,6 +26,7 @@ a.nav-link {
 
     &:hover {
         // transform: translateY(0.1rem) translateX(-0.1rem);
-        box-shadow: inset 0px 0px 5px 2px lighten($clr-accent, 10%);
+        color: $clr-primary-light;
+        background-color: $clr-accent;
     }
 }

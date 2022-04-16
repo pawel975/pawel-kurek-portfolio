@@ -2,8 +2,10 @@
 
 // colors
 $clr-primary-dark: #3D348B;
-$clr-primary-light: #edf0f8;
+$clr-primary-light: #efefec;
+$clr-secondary-dark: #4C3957;
 $clr-accent: #F18701;
+
 
 // mixins
 @mixin fontColor($RGBcolor, $opacity) {
