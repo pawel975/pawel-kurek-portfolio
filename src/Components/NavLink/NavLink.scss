@@ -28,5 +28,13 @@ a.nav-link {
         animation: tilt alternate 0.5s;
         color: $clr-primary-light;
         background-color: $clr-accent;
+
+        @media (max-width: 64rem) {
+            animation: none;
+        }
+    }
+
+    @media (max-width: 64rem) {
+        font-size: $fs-600;
     }
 }

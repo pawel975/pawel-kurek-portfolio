@@ -33,7 +33,6 @@ footer#contact {
             font-family: $ff-heading;
             color: $clr-primary-light;
         }
-
         .contact-icon {
             @include fontColor($clr-primary-light, 0.3);
             width: 60%;
