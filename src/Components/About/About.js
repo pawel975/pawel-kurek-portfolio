@@ -16,7 +16,7 @@ const About = () => {
             },
             duration: 1,
             opacity:0,
-            x: '-200',
+            x: '-50',
             stagger: 0.15,
         })
 

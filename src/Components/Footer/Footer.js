@@ -27,7 +27,7 @@ const Footer = () => {
                 toggleActions: "play none none none",
             },
             duration: 1,
-            y: "-200",
+            y: "-50",
             opacity: 0,
         })
 
@@ -39,7 +39,7 @@ const Footer = () => {
                 toggleActions: "play none none none",
             },
             duration: 1,
-            x: "+200",
+            x: "+50",
             opacity: 0,
         })
 

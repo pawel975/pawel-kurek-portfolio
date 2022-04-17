@@ -15,7 +15,7 @@ const LandingPage = () => {
             },
             duration: 1, 
             opacity:0, 
-            x: '-200',
+            x: '-50',
             stagger: 0.3,
         })
 
@@ -27,7 +27,7 @@ const LandingPage = () => {
             },
             duration: 1, 
             opacity:0, 
-            y: '200',
+            y: '50',
         })
 
     }, [])
