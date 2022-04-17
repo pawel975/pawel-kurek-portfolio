@@ -27,7 +27,7 @@ const Footer = () => {
                 toggleActions: "restart none restart none",
             },
             duration: 1,
-            y: "200",
+            y: "-200",
             opacity: 0,
         })
 
