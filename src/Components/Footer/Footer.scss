@@ -36,12 +36,13 @@ footer#contact {
 
         .contact-icon {
             @include fontColor($clr-primary-light, 0.3);
-            width: 100%;
+            width: 60%;
             height: 60%;
-            margin: auto;
 
-            @media (max-width: 30rem) {
+            @media (max-width: 64rem) {
                 width: 70%;
+                margin: 0;
+                margin-inline: auto;
             }
         } 
     }
