@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Footer.scss';
 import {MdConnectWithoutContact as ContactIcon} from 'react-icons/md';
 import {AiFillGithub as GithubLink} from 'react-icons/ai';
 import {MdEmail as Mail} from 'react-icons/md';
 import PopupMessage from '../PopupMessage/PopupMessage';
+import gsap from 'gsap';
 
 const Footer = () => {
 
@@ -18,6 +19,32 @@ const Footer = () => {
 
     }
 
+    useEffect(()=> {
+
+        gsap.from(".contact-header", {
+            scrollTrigger: {
+                trigger: ".contact-header",
+                toggleActions: "restart none restart none",
+            },
+            duration: 1,
+            y: "200",
+            opacity: 0,
+        })
+
+        const contactEls = document.querySelector(".contact-links").children;
+
+        gsap.from(contactEls, {
+            scrollTrigger: {
+                trigger: contactEls,
+                toggleActions: "restart none restart none",
+            },
+            duration: 1,
+            scale: 0.8,
+            opacity: 0,
+        })
+
+    }, [])
+
     return (
         <footer id='contact'>
             <header className='contact-header'>
@@ -25,6 +52,17 @@ const Footer = () => {
                 <ContactIcon className='contact-icon'/>
             </header>
             <div className='contact-links'>
+                <div className='contact-link-wrapper'>
+                    <button  
+                        onClick={copyToClipboard}
+                        className='copy-email'
+                    >
+                        <Mail  
+                            className='email'
+                            />
+                        <p>pawel.kurek975@gmail.com</p>
+                    </button>
+                </div>
                 <div className='contact-link-wrapper'>
                     <a 
                         href='https://github.com/pawel975'
@@ -35,17 +73,6 @@ const Footer = () => {
                         <GithubLink className='github'/>
                         <p>pawel975</p>
                     </a>
-                </div>
-                <div className='contact-link-wrapper'>
-                    <div  
-                        onClick={copyToClipboard}
-                        className='copy-email'
-                    >
-                        <Mail  
-                            className='email'
-                            />
-                        <p>pawel.kurek975@gmail.com</p>
-                    </div>
                 </div>
             </div>
             {isPopupVisible && <PopupMessage text={'e-mail copied to clipboard'}/>}

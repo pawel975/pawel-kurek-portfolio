@@ -1,7 +1,36 @@
 import './About.scss';
-import {GiGears as MechanicsIcon} from 'react-icons/gi'
+import {GoGear as MechanicsIcon} from 'react-icons/go'
+import gsap from 'gsap';
+import { useEffect } from 'react';
 
 const About = () => {
+
+    useEffect(()=> {
+
+        const aboutPageBiographyEls = document.querySelector(".about-page__biography").children
+
+        gsap.from(aboutPageBiographyEls, {
+            scrollTrigger: {
+                trigger: aboutPageBiographyEls,
+                toggleActions: "restart none restart none"
+            },
+            duration: 1,
+            opacity:0,
+            x: '-200',
+            stagger: 0.15,
+        })
+
+        gsap.from('.about-page__icon', {
+            scrollTrigger: {
+                trigger: '.about-page__icon',
+                toggleActions: "restart none restart none"
+            },
+            duration: 1.45,
+            rotate: '360',
+        })
+
+    })
+
     return (
         <section id='about-page'>
             <header className='about-page__biography'>

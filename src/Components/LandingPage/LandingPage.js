@@ -1,38 +1,34 @@
 import "./LandingPage.scss";
-import { FaLaptopCode } from 'react-icons/fa';
+import { FaLaptopCode as LaptopIcon } from 'react-icons/fa';
 import { useEffect } from "react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/src/ScrollTrigger";
 
 const LandingPage = () => {
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const tl = gsap.timeline();
-        const heading = document.querySelector(".landing-page__welcome-heading")
 
-        tl.from(heading.children, {
+        // Animate heading
+        gsap.from(".landing-page__welcome-heading", {
             scrollTrigger: {
-                trigger: heading,
-                start:"bottom top",
-                end: "+200",
-                markers: {
-                    startColor: 'red',
-                    endColor: "salmon"
-                },
-                toggleActions: 'restart'
+                trigger: ".landing-page__welcome-heading",
+                toggleActions: 'restart none restart none'
             },
             duration: 1, 
             opacity:0, 
             x: '-200',
-            // stagger: 0.3,
+            stagger: 0.3,
         })
 
-        // tl.from('.landing-page__logo', {
-        //     duration: 1, 
-        //     opacity:0, 
-        //     y: '-200',
-        // })
+        // Animate icon
+        gsap.from('.landing-page__logo', {
+            scrollTrigger: {
+                trigger: '.landing-page__logo',
+                toggleActions: 'restart none restart none'
+            },
+            duration: 1, 
+            opacity:0, 
+            y: '200',
+        })
 
     }, [])
 
@@ -43,7 +39,7 @@ const LandingPage = () => {
                 <p>I want to become a</p>
                 <p>Frontend developer</p>
             </header>
-            <FaLaptopCode className='landing-page__logo'/>
+            <LaptopIcon className='landing-page__logo'/>
         </section>
     )
 }

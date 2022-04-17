@@ -40,42 +40,60 @@ footer#contact {
             height: 50%;
             display: flex;
             gap: 1rem;
-        }
-
-        a.github-link {
-            text-decoration: none;
-            display: flex;
-            color: $clr-accent;
-            gap: 1rem;
-
-            .github {
-                width: 100%;
-                height: 100%;
-            }
-
-            p {
-                align-self: center;
-                font-size: $fs-400;
-                font-weight: 700;
-            }
-        }
-
-        div.copy-email {
-            display: flex;
-            gap: 1rem;
-            cursor: pointer;
-
-            .email {
+            
+            a.github-link {
+               text-decoration: none;
+                display: flex;
                 color: $clr-accent;
-                width: 100%;
-                height: 100%;
+                gap: 1rem;
+    
+                
+                &:hover {
+                    color: darken($clr-accent, 10%);
+                    transform: scale(1.05);
+                    transition: 0.3s;
+                }
+    
+                .github {
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                p {
+                    align-self: center;
+                    font-size: $fs-400;
+                    font-weight: 700;
+                }
+            } 
+
+            button.copy-email {
+                background-color: transparent;
+                border: none;
+                color: inherit;
+                display: flex;
+                gap: 1rem;
+                cursor: pointer;
+    
+                
+                &:hover {
+                    color: darken($clr-accent, 10%);
+                    transform: scale(1.05);
+                    transition: 0.3s;
+                }
+    
+                .email {
+                    width: 100%;
+                    height: 100%;
+    
+                }
+    
+                p {
+                    align-self: center;
+                    font-size: $fs-400;
+                    font-weight: 700;
+                }
             }
 
-            p {
-                align-self: center;
-                font-size: $fs-400;
-                font-weight: 700;
-            }
         }
 
     }

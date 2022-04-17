@@ -18,8 +18,9 @@ nav {
         border: none;
         z-index: 2;
     }
-
+    
     .toggle-menu-modal-icon {
+        // pointer-events: none;
         cursor: pointer;
         color: $clr-accent;
         width: 3rem;

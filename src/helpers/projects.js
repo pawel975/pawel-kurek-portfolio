@@ -1,5 +1,9 @@
 import fyHome from '../assets/img/fy-home.png';
+import fyFood from '../assets/img/fy-food.png';
+import fyMotivation from '../assets/img/fy-motivation.png';
+import fyMeasures from '../assets/img/fy-measures.png';
 import waHome from '../assets/img/wa-home.png';
+import waModal from '../assets/img/wa-modal.png';
 import {AiFillHtml5} from 'react-icons/ai';
 import {SiJavascript, SiJest, SiRedux} from 'react-icons/si';
 import {GrReactjs} from 'react-icons/gr';
@@ -12,6 +16,9 @@ const projects = [
         description: "Track your daily diet based on goals and measures",
         images: [
             fyHome,
+            fyFood,
+            fyMotivation,
+            fyMeasures
         ],
         techStack: [
             <SiJavascript/>,
@@ -29,6 +36,7 @@ const projects = [
         description: "Weather app with hours and days forecast, get info about temperature, weather and more details stuff.",
         images: [
             waHome,
+            waModal
         ],
         techStack: [
             <GrReactjs/>,

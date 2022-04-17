@@ -3,12 +3,13 @@ import './Nav.scss';
 import {HiMenuAlt3 as ModalOpen} from 'react-icons/hi';
 import {CgClose as ModalClose} from 'react-icons/cg';
 import MenuModal from '../MenuModal/MenuModal';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 const Nav = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const modalRef = useRef(false);
+    const modalRef = useRef();
+    const btnOpenRef = useRef();
 
     const handleModalOpen = () => {
         if (!isModalOpen) {
@@ -17,27 +18,34 @@ const Nav = () => {
         }
     }
 
-    const handleModalClose = () => {
-        if (isModalOpen) {
+    const handleModalClose = useCallback((e) => {
+
+        if (!isModalOpen) return
+
+        if (!(modalRef.current === e.target) && !(btnOpenRef.current === e.target)) {
+            setIsModalOpen(false)
+            modalRef.current.style.display = "none"
+        }
+
+    },[isModalOpen])
+
+    const handleEscPress = useCallback((e)=> {
+        if (e.keyCode === 27) {
             setIsModalOpen(false)
             modalRef.current.style.display = "none";
-        }
-    }
+        } 
+    }, [])
 
     useEffect(() => {
 
-        const modalCloseOnEscape = (e) => {
-          if(e.keyCode === 27){
-            setIsModalOpen(false)
-            modalRef.current.style.display = "none";
-          }
-        }
+    window.addEventListener('keydown', handleEscPress)
+    window.addEventListener('click', handleModalClose)
 
-        window.addEventListener('keydown', modalCloseOnEscape)
-
-      return () => window.removeEventListener('keydown', modalCloseOnEscape)
-
-    },[])
+      return () => {
+            window.removeEventListener('keydown', handleEscPress)
+            window.removeEventListener('click', handleModalClose)
+      }
+    },[isModalOpen, handleModalClose, handleEscPress])
 
     return (
         <nav>
@@ -51,6 +59,7 @@ const Nav = () => {
                     </button>
                     :
                     <button 
+                        ref={btnOpenRef}
                         onClick={handleModalOpen}
                         className='toggle-menu-modal-button'
                     >
