@@ -12,7 +12,7 @@ const About = () => {
         gsap.from(aboutPageBiographyEls, {
             scrollTrigger: {
                 trigger: aboutPageBiographyEls,
-                toggleActions: "restart none restart none"
+                toggleActions: "play none none none"
             },
             duration: 1,
             opacity:0,
@@ -23,7 +23,7 @@ const About = () => {
         gsap.from('.about-page__icon', {
             scrollTrigger: {
                 trigger: '.about-page__icon',
-                toggleActions: "restart none restart none"
+                toggleActions: "play none none none"
             },
             duration: 1.45,
             rotate: '360',

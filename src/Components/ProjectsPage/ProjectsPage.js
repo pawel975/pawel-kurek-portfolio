@@ -27,7 +27,7 @@ const ProjectsPage = () => {
             gsap.from(element, {
                 scrollTrigger: {
                     trigger: element,
-                    toggleActions: "restart none restart none",
+                    toggleActions: "play none none none",
                 },
                 duration: 0.5,
                 opacity: 0,

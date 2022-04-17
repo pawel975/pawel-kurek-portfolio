@@ -24,7 +24,7 @@ const Footer = () => {
         gsap.from(".contact-header", {
             scrollTrigger: {
                 trigger: ".contact-header",
-                toggleActions: "restart none restart none",
+                toggleActions: "play none none none",
             },
             duration: 1,
             y: "-200",
@@ -36,7 +36,7 @@ const Footer = () => {
         gsap.from(contactEls, {
             scrollTrigger: {
                 trigger: contactEls,
-                toggleActions: "restart none restart none",
+                toggleActions: "play none none none",
             },
             duration: 1,
             x: "+200",

@@ -11,7 +11,7 @@ const LandingPage = () => {
         gsap.from(".landing-page__welcome-heading", {
             scrollTrigger: {
                 trigger: ".landing-page__welcome-heading",
-                toggleActions: 'restart none restart none'
+                toggleActions: 'play none none none'
             },
             duration: 1, 
             opacity:0, 
@@ -23,7 +23,7 @@ const LandingPage = () => {
         gsap.from('.landing-page__logo', {
             scrollTrigger: {
                 trigger: '.landing-page__logo',
-                toggleActions: 'restart none restart none'
+                toggleActions: 'play none none none'
             },
             duration: 1, 
             opacity:0, 
