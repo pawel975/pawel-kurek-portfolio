@@ -39,7 +39,7 @@ const Footer = () => {
                 toggleActions: "restart none restart none",
             },
             duration: 1,
-            scale: 0.8,
+            x: "+200",
             opacity: 0,
         })
 
