@@ -1,7 +1,8 @@
+@use "../../variables" as *;
 
 div.menu-modal {
-    width: 20rem;
-    height: 30rem;
+    width: 20%;
+    height: fit-content;
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -9,8 +10,8 @@ div.menu-modal {
     flex-direction: column;
     gap: 1rem;
     background-color: white;
-    padding: 1rem;
-    padding-top: 5rem;
+    padding-inline: 1rem;
+    padding-block: 5rem;
     animation: show 0.3s ease-in-out;
 
     @keyframes show {
@@ -21,8 +22,8 @@ div.menu-modal {
         }
 
         100% {
-            width: 20rem;
-            height: 30rem;
+            width: 20%;
+            height: fit-content;
             opacity: 1;
         }
     }

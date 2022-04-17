@@ -1,7 +1,7 @@
 @use '../../variables.scss' as *;
 
 div.project {
-    width: clamp(15rem, 80%, 90rem);
+    width: clamp(15rem, 100%, 90rem);
     height: fit-content;
     margin-inline: auto;
     display: flex;
@@ -10,10 +10,15 @@ div.project {
     @include fontColor($clr-primary-dark, 1);
     gap: 2rem;
 
+    @media (max-width: 64rem) {
+        flex-direction: column;
+    }
+    
     header {
         font-family: $ff-heading;
         font-size: $fs-400;
         font-weight: 700;
         @include fontColor($clr-primary-dark, 1);
+    
     }
 }

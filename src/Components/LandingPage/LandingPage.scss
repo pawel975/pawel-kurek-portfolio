@@ -11,6 +11,14 @@
     gap: 1rem;
     padding: 10rem;
 
+    @media (max-width: 64rem) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 64rem) {
+        padding: 2rem;
+    }
+
     * {
         width: clamp(15rem, 100%, 70rem);
     }
@@ -23,42 +31,30 @@
 
         @include fontColor($clr-primary-light, 1);
 
-        @media (min-width: 125rem) { // 2000 px
-            font-size: $fs-700;
-        }
-
-        @media (min-width: 150rem) { // 2400 px
-            font-size: $fs-800;
-        }
-
-        @media (min-width: 200rem) { // 3200 px
-            font-size: $fs-900;
-        }
-
         h1 {
             font-size: $fs-700;
 
             span {
                 color: lighten($clr-accent, 10%);
             }
+        }
 
-            @media (min-width: 125rem) { // 2000 px
-                font-size: $fs-800;
-            }
-    
-            @media (min-width: 150rem) { // 2400 px
-                font-size: $fs-900;
-            }
-    
-            @media (min-width: 200rem) { // 3200 px
-                font-size: $fs-1000;
-            }
+        @media (max-width: 64rem) {
+            // width: 80%;
+            margin: auto;
+            text-align: center;
         }
     }
 
     .landing-page__logo {
         height: clamp(15rem, 40%, 70rem);
-        @include fontColor($clr-primary-light, 0.3)
+        @include fontColor($clr-primary-light, 0.3);
+
+        @media (max-width: 64rem) {
+            height: clamp(15rem, 30%, 70rem);
+            margin: auto;
+            text-align: center;
+        }
     }
 
 

@@ -12,18 +12,6 @@ a.nav-link {
     border-radius: 0.5rem;
     cursor: pointer;
 
-    @media (min-width: 125rem) { // 2000 px
-        font-size: $fs-400;
-    }
-
-    @media (min-width: 150rem) { // 2400 px
-        font-size: $fs-500;
-    }
-
-    @media (min-width: 200rem) { // 3200 px
-        font-size: $fs-600;
-    }
-
     @keyframes tilt {
         0% {
             transform: scale(1.0);

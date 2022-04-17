@@ -7,6 +7,10 @@ div.slider__container {
     aspect-ratio: 16/9;
     overflow: hidden;
 
+    @media (max-width: 30rem) {
+        width: 100%;
+    }
+
     div.slider__images-container {
         top: 0;
         left: 0%;

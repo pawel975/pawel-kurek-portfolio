@@ -6,7 +6,14 @@ a.source-link {
     @include bgColor($clr-accent, 1);
     font-weight: 900;
     // font-family: $ff-heading;
+    width: fit-content;
+    height: fit-content;
     padding: 0.5rem;
     border-radius: 50rem;
     font-size: $fs-200;
+    transition: 0.15s ease-in-out;
+
+    &:hover {
+        background-color: darken($color: $clr-accent, $amount: 10%)
+    }
 }

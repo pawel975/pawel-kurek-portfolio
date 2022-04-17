@@ -13,10 +13,14 @@
 
     padding: 10rem;
     width: 100%;
-    padding-block: 7rem; // Nav has height of 4 rem
     @include bgColor($clr-primary-light, 1);
     display: flex;
     flex-direction: column;
-    gap: 8rem;
+    gap: 5rem;
+
+    @media (max-width: 30rem) {
+        gap: 3rem;
+        padding: 2rem;
+    }
     
 }
