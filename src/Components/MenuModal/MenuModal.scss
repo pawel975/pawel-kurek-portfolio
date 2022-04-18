@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 div.menu-modal {
-    min-width: fit-content;
+    width: clamp(15rem, 20%, 40rem);
     height: fit-content;
     position: absolute;
     right: 1rem;
@@ -22,7 +22,7 @@ div.menu-modal {
         }
 
         100% {
-            width:fit-content;
+            width: clamp(15rem, 20%, 40rem);
             height: fit-content;
             opacity: 1;
         }

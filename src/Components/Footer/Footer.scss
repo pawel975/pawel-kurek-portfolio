@@ -8,6 +8,10 @@ footer#contact {
     display: flex;
     gap: 1rem;
 
+    @media (orientation: portrait) {
+        flex-direction: column;
+    }
+
     @media (max-width: 64rem) {
         flex-direction: column;
     }

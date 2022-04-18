@@ -8,6 +8,10 @@
             color: $clr-primary-dark;
             font-size: $fs-700;
             font-family: $ff-heading;
+
+            @media (max-width: 30rem) {
+               margin-bottom: 2rem;
+            }
         }
     }
 

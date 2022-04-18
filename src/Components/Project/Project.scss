@@ -10,6 +10,10 @@ div.project {
     @include fontColor($clr-primary-dark, 1);
     gap: 2rem;
 
+    @media (orientation: portrait) {
+        flex-direction: column;
+    }
+
     @media (max-width: 64rem) {
         flex-direction: column;
     }

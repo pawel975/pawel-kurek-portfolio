@@ -11,6 +11,10 @@
     gap: 1rem;
     padding: 10rem;
 
+    @media (orientation: portrait) {
+        flex-direction: column;
+    }
+
     @media (max-width: 64rem) {
         flex-direction: column;
     }
@@ -39,8 +43,12 @@
             }
         }
 
+        @media (orientation: portrait) {
+            text-align: center;
+            margin: auto;
+        }
+
         @media (max-width: 64rem) {
-            // width: 80%;
             margin: auto;
             text-align: center;
         }
