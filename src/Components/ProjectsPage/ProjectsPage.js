@@ -5,16 +5,19 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 
 const allProjects = projects.map(project => (
-    <Project 
-        key={project.id} 
-        id={project.id}
-        name={project.name}
-        description={project.description}
-        images={project.images}
-        techStack={project.techStack}
-        githubLink={project.githubLink}
-        liveVersionLink={project.liveVersionLink}
-    />
+    <>
+        <Project 
+            key={project.id} 
+            id={project.id}
+            name={project.name}
+            description={project.description}
+            images={project.images}
+            techStack={project.techStack}
+            githubLink={project.githubLink}
+            liveVersionLink={project.liveVersionLink}
+        />
+        <hr></hr>
+    </>
 ))
 
 const ProjectsPage = () => {
