@@ -45,6 +45,7 @@ const ProjectsPage = () => {
             <header className='subtitle'>
                 <h2>Selected personal projects</h2>
             </header>
+            <hr/>
             {allProjects}
         </section>
     )
