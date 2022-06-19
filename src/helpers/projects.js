@@ -32,6 +32,7 @@ const projects = [
         ],
         techStack: [
             <GrReactjs/>,
+            <SiRedux/>,
             <SiTestinglibrary/>,
             <AiFillHtml5/>,
             <DiSass/>,
