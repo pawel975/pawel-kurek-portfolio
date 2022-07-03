@@ -15,6 +15,11 @@
         flex-direction: column;
     }
 
+    @media (max-width: 90rem) {
+        gap: 3rem;
+        padding: 6rem;
+    }
+
     @media (max-width: 64rem) {
         flex-direction: column;
         padding: 2rem;

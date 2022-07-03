@@ -6,6 +6,10 @@ div.project-info {
 
     p.description {
         width: 60%;
+
+        @media (max-width: 90rem) {
+            width: 100%;
+        }
     }
 
     div.tech {

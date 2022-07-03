@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './Footer.scss';
-import {MdConnectWithoutContact as ContactIcon} from 'react-icons/md';
 import {AiFillGithub as GithubLink} from 'react-icons/ai';
 import {MdEmail as Mail} from 'react-icons/md';
 import PopupMessage from '../PopupMessage/PopupMessage';
