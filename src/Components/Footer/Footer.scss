@@ -6,7 +6,7 @@ footer#contact {
     background-color: $clr-tertiary-dark;
     padding: 10rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 
     @media (orientation: portrait) {
         flex-direction: column;
@@ -15,7 +15,7 @@ footer#contact {
     @media (max-width: 64rem) {
         flex-direction: column;
         padding: 2rem;
-        gap: 0;
+        // gap: 0;
     }
 
     header.contact-header {
@@ -25,25 +25,22 @@ footer#contact {
         width: 100%;
         margin: auto;
 
-        @media (max-width: 64rem) {
-            height: fit-content
-        }
-
         h2 {
             font-size: $fs-700;
             font-family: $ff-heading;
             color: $clr-primary-light;
         }
+
         .contact-icon {
             @include fontColor($clr-primary-light, 0.3);
             width: 60%;
             height: 60%;
 
-            @media (max-width: 64rem) {
-                width: 70%;
-                margin: 0;
-                margin-inline: auto;
-            }
+            // @media (max-width: 64rem) {
+            //     width: 70%;
+            //     margin: 0;
+            //     margin-inline: auto;
+            // }
         } 
     }
 
@@ -53,20 +50,17 @@ footer#contact {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        // justify-items: center;
         color: $clr-accent;
-
-        @media (max-width: 64rem) {
-            gap: 0rem;
-        }
+        gap: 2rem;
 
         div.contact-link-wrapper {
             width: 100%;
-            height: 50%;
+            height: clamp(10rem, 20%, 30rem);
             display: flex;
             gap: 1rem;
-            margin: auto;
 
-            @media (max-width: 64rem) {
+            @media (max-width: 30rem) {
                 width: 50%;
             }
             
@@ -76,7 +70,7 @@ footer#contact {
                 color: $clr-accent;
                 gap: 1rem;
                 
-                @media (max-width: 64rem) {
+                @media (max-width: 30rem) {
                     width: 50%;
                     flex-direction: column;
                     margin: auto;
@@ -108,7 +102,7 @@ footer#contact {
                 gap: 1rem;
                 cursor: pointer;
                 
-                @media (max-width: 64rem) {
+                @media (max-width: 30rem) {
                     width: 50%;
                     flex-direction: column;
                     margin: auto;

@@ -49,7 +49,6 @@ const Footer = () => {
         <footer id='contact'>
             <header className='contact-header'>
                 <h2>Contact me</h2>
-                <ContactIcon className='contact-icon'/>
             </header>
             <div className='contact-links'>
                 <div className='contact-link-wrapper'>
