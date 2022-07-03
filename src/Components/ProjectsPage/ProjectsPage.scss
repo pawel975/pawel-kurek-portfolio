@@ -9,7 +9,7 @@
             font-size: $fs-700;
             font-family: $ff-heading;
 
-            @media (max-width: 30rem) {
+            @media (max-width: 64rem) {
                margin-bottom: 2rem;
             }
         }
@@ -26,7 +26,7 @@
     flex-direction: column;
     gap: 5rem;
 
-    @media (max-width: 75rem) {
+    @media (max-width: 64rem) {
         gap: 3rem;
         padding: 2rem;
     }
