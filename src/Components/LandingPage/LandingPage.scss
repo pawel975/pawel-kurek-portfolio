@@ -58,11 +58,15 @@
 
     .landing-page__logo {
         height: clamp(15rem, 40%, 70rem);
+        margin: auto;
         @include fontColor($clr-primary-light, 0.3);
+        
+        @media (orientation: portrait) {
+            width: 50%;
+        }
 
         @media (max-width: 64rem) {
             height: clamp(15rem, 30%, 70rem);
-            margin: auto;
             text-align: center;
         }
     }

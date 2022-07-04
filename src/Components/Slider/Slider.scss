@@ -12,7 +12,7 @@ div.slider__container {
     }
 
     div.slider__images-container {
-        top: 0;
+        top: 0%;
         left: 0%;
         position: absolute;
         width: 100%;
@@ -20,7 +20,7 @@ div.slider__container {
         display: flex;
 
         img.slider__app-image {
-            width: 100%;
+            width: 100vw;
             height: 100%;
         }
 

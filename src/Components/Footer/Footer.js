@@ -57,7 +57,7 @@ const Footer = () => {
                     >
                         <Mail  
                             className='email'
-                            />
+                        />
                         <p>pawel.kurek975@gmail.com</p>
                     </button>
                 </div>
