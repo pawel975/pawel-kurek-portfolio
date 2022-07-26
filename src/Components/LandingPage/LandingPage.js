@@ -35,9 +35,8 @@ const LandingPage = () => {
     return (
         <section id="landing-page">
             <header className="landing-page__welcome-heading">
-                <h1>Hi, I'm <span>Paweł</span></h1>
-                <p>I want to become a</p>
-                <p>Frontend developer</p>
+                <h1>Hello, I'm <span>Paweł</span></h1>
+                <p>Welcome to my portfolio</p>
             </header>
             <LaptopIcon className='landing-page__logo'/>
         </section>
