@@ -2,10 +2,15 @@ import "./LandingPage.scss";
 import { FaLaptopCode as LaptopIcon } from 'react-icons/fa';
 import { useEffect } from "react";
 import gsap from "gsap";
+import countapi from 'countapi-js';
 
 const LandingPage = () => {
 
     useEffect(() => {
+
+        countapi.visits("global").then((result) => {
+            console.log(result.value);
+        });
 
         // Animate heading
         gsap.from(".landing-page__welcome-heading", {
