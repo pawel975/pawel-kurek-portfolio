@@ -41,7 +41,7 @@
             font-size: $fs-700;
 
             span {
-                color: lighten($clr-accent, 10%);
+                color: $clr-accent;
             }
         }
 

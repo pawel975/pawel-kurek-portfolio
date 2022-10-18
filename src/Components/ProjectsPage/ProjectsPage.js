@@ -16,7 +16,6 @@ const allProjects = projects.map(project => (
             githubLink={project.githubLink}
             liveVersionLink={project.liveVersionLink}
         />
-        <hr></hr>
     </>
 ))
 
@@ -45,7 +44,6 @@ const ProjectsPage = () => {
             <header className='subtitle'>
                 <h2>Selected personal projects</h2>
             </header>
-            <hr/>
             {allProjects}
         </section>
     )

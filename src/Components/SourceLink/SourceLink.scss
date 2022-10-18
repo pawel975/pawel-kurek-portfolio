@@ -2,7 +2,7 @@
 
 a.source-link {
     text-decoration: none;
-    @include fontColor($clr-primary-light, 1);
+    @include fontColor($clr-primary-dark, 1);
     @include bgColor($clr-accent, 1);
     font-weight: 900;
     width: fit-content;
@@ -12,7 +12,10 @@ a.source-link {
     font-size: $fs-200;
     transition: 0.15s ease-in-out;
 
-    &:hover {
-        background-color: darken($color: $clr-accent, $amount: 10%)
+    &:hover,
+    &:focus {
+        background-color: darken($color: $clr-accent, $amount: 40%);
+        outline: 0.1rem solid white;
+        @include fontColor($clr-primary-light, 1);  
     }
 }

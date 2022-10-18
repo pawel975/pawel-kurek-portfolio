@@ -7,7 +7,7 @@ div.project {
     display: flex;
     flex-direction: row;
     font-size: $fs-300;
-    @include fontColor($clr-primary-dark, 1);
+    @include fontColor($clr-primary-light, 1);
     gap: 2rem;
 
     @media (orientation: portrait) {
@@ -22,7 +22,7 @@ div.project {
         font-family: $ff-heading;
         font-size: $fs-400;
         font-weight: 700;
-        @include fontColor($clr-primary-dark, 1);
+        @include fontColor($clr-primary-light, 1);
     
     }
 }

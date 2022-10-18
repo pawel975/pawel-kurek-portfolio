@@ -24,11 +24,13 @@ a.nav-link {
         }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         animation: tilt alternate 0.5s;
         color: $clr-primary-light;
-        background-color: $clr-accent;
+        background-color: darken($color: $clr-accent, $amount: 40%);
 
+        @include fontColor($clr-primary-light, 1);  
         @media (max-width: 64rem) {
             animation: none;
         }
