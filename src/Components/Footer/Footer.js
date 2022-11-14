@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './Footer.scss';
-import {AiFillGithub as GithubLink} from 'react-icons/ai';
-import {MdEmail as Mail} from 'react-icons/md';
+import {AiFillGithub as GithubIcon} from 'react-icons/ai';
+import {MdEmail as MailIcon} from 'react-icons/md';
+import {BsLinkedin as LinkedInIcon} from 'react-icons/bs';
 import PopupMessage from '../PopupMessage/PopupMessage';
 import gsap from 'gsap';
 
@@ -55,10 +56,10 @@ const Footer = () => {
                         onClick={copyToClipboard}
                         className='copy-email'
                     >
-                        <Mail  
-                            className='email'
+                        <MailIcon  
+                            className='contact-link-icon'
                         />
-                        <p>pawel.kurek975@gmail.com</p>
+                        <p className='contact-link-description'>pawel.kurek975@gmail.com</p>
                     </button>
                 </div>
                 <div className='contact-link-wrapper'>
@@ -68,8 +69,19 @@ const Footer = () => {
                         rel="noreferrer"
                         className='github-link'
                     >
-                        <GithubLink className='github'/>
-                        <p>pawel975</p>
+                        <GithubIcon className='contact-link-icon'/>
+                        <p className='contact-link-description'>pawel975</p>
+                    </a>
+                </div>
+                <div className='contact-link-wrapper'>
+                    <a 
+                        href='https://www.linkedin.com/in/pawe%C5%82-kurek-7aab5424b/'
+                        target="_blank" 
+                        rel="noreferrer"
+                        className='linkedin-link'
+                    >
+                        <LinkedInIcon className='contact-link-icon'/>
+                        <p className='contact-link-description'>Paweł Kurek</p>
                     </a>
                 </div>
             </div>
