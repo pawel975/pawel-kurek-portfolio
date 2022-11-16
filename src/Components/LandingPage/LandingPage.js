@@ -3,6 +3,7 @@ import { FaLaptopCode as LaptopIcon } from 'react-icons/fa';
 import { useEffect } from "react";
 import gsap from "gsap";
 import countapi from 'countapi-js';
+import photo from '../../assets/img/my-photo.jpg'
 
 const LandingPage = () => {
 
@@ -25,9 +26,9 @@ const LandingPage = () => {
         })
 
         // Animate icon
-        gsap.from('.landing-page__logo', {
+        gsap.from('.landing-page__my-photo-container', {
             scrollTrigger: {
-                trigger: '.landing-page__logo',
+                trigger: '.landing-page__my-photo-container',
                 toggleActions: 'play none none none'
             },
             duration: 1, 
@@ -43,7 +44,10 @@ const LandingPage = () => {
                 <h1>Hello, I'm <span>Paweł</span></h1>
                 <p>Welcome to my portfolio</p>
             </header>
-            <LaptopIcon className='landing-page__logo'/>
+            <div className="landing-page__my-photo-container">
+                <img src={photo} alt="Paweł Kurek" />
+            </div>
+            {/* <LaptopIcon className='landing-page__logo'/> */}
         </section>
     )
 }
