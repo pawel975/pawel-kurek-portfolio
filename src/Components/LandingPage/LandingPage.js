@@ -1,5 +1,4 @@
 import "./LandingPage.scss";
-import { FaLaptopCode as LaptopIcon } from 'react-icons/fa';
 import { useEffect } from "react";
 import gsap from "gsap";
 import countapi from 'countapi-js';
@@ -47,7 +46,6 @@ const LandingPage = () => {
             <div className="landing-page__my-photo-container">
                 <img src={photo} alt="Paweł Kurek" />
             </div>
-            {/* <LaptopIcon className='landing-page__logo'/> */}
         </section>
     )
 }
