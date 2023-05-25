@@ -4,20 +4,61 @@ import Project from "../Project/Project";
 import { useEffect } from "react";
 import gsap from "gsap";
 
-const allProjects = projects.map((project) => (
-  <>
+const finishedProjects = projects.map((project) => {
+  const {
+    id,
+    name,
+    isFinished,
+    description,
+    images,
+    techStack,
+    githubLink,
+    liveVersionLink,
+  } = project;
+
+  if (!isFinished) return null;
+
+  return (
     <Project
-      key={project.id}
-      id={project.id}
-      name={project.name}
-      description={project.description}
-      images={project.images}
-      techStack={project.techStack}
-      githubLink={project.githubLink}
-      liveVersionLink={project.liveVersionLink}
+      key={id}
+      id={id}
+      name={name}
+      description={description}
+      images={images}
+      techStack={techStack}
+      githubLink={githubLink}
+      liveVersionLink={liveVersionLink}
     />
-  </>
-));
+  );
+});
+
+const inProgressProjects = projects.map((project) => {
+  const {
+    id,
+    name,
+    isFinished,
+    description,
+    images,
+    techStack,
+    githubLink,
+    liveVersionLink,
+  } = project;
+
+  if (isFinished) return null;
+
+  return (
+    <Project
+      key={id}
+      id={id}
+      name={name}
+      description={description}
+      images={images}
+      techStack={techStack}
+      githubLink={githubLink}
+      liveVersionLink={liveVersionLink}
+    />
+  );
+});
 
 const ProjectsPage = () => {
   useEffect(() => {
@@ -41,7 +82,9 @@ const ProjectsPage = () => {
       <header className="subtitle">
         <h2>Selected personal projects</h2>
       </header>
-      {allProjects}
+      {finishedProjects}
+      <h3>In progress projects...</h3>
+      {inProgressProjects}
     </section>
   );
 };
