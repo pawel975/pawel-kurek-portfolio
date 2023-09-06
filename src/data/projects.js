@@ -81,7 +81,7 @@ const projects = [
     images: [ycBlankProject, ycExampleDrawing],
     techStack: [<IconTypeScript />, <IconReact />, <IconHTML />, <IconCSS />],
     githubLink: "https://github.com/pawel975/YourCanvas.git",
-    liveVersionLink: "https://your-canvas-l9tecvod7-pawel975.vercel.app",
+    liveVersionLink: "https://your-canvas-b1k1ajrr9-pawel975.vercel.app",
   },
 ];
 
