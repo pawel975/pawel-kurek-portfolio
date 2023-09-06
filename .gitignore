@@ -25,3 +25,4 @@ yarn-error.log*
 # text
 
 todo.md
+.env
