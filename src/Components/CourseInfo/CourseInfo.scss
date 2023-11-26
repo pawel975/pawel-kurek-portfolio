@@ -5,6 +5,8 @@ div.course-info {
 
   p.description {
     width: 60%;
+    white-space: pre;
+    height: inherit;
 
     @media (max-width: 90rem) {
       width: 100%;
