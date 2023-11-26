@@ -1,10 +1,13 @@
 import "./CourseInfo.scss";
 
-const CourseInfo = ({ name, description }) => {
+const CourseInfo = ({ name, courseTopics }) => {
+  const allTopics = courseTopics.map((topic) => (
+    <li className="topic">{topic}</li>
+  ));
   return (
     <div className="course-info">
       <header>{name}</header>
-      <p className="description">{description}</p>
+      <ul>{allTopics}</ul>
     </div>
   );
 };

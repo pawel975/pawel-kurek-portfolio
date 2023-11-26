@@ -5,7 +5,7 @@ div.course {
   height: fit-content;
   margin-inline: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-size: $fs-300;
   @include fontColor($clr-primary-light, 1);
   gap: 2rem;

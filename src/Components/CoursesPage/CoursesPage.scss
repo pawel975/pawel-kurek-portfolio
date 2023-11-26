@@ -1,6 +1,23 @@
 @use "../../variables.scss" as *;
 
 #courses-page {
+  padding: 10rem;
+  width: 100%;
+  @include bgColor($clr-secondary-dark, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @media (max-width: 90rem) {
+    gap: 3rem;
+    padding: 6rem;
+  }
+
+  @media (max-width: 64rem) {
+    gap: 3rem;
+    padding: 2rem;
+  }
+
   header.subtitle {
     h2 {
       color: $clr-primary-light;
@@ -25,22 +42,5 @@
 
   hr {
     width: 100%;
-  }
-
-  padding: 10rem;
-  width: 100%;
-  @include bgColor($clr-secondary-dark, 1);
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-
-  @media (max-width: 90rem) {
-    gap: 3rem;
-    padding: 6rem;
-  }
-
-  @media (max-width: 64rem) {
-    gap: 3rem;
-    padding: 2rem;
   }
 }

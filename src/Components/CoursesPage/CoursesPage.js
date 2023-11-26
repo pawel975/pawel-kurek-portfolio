@@ -1,19 +1,18 @@
 import "./CoursesPage.scss";
 import { useEffect } from "react";
 import gsap from "gsap";
-import Slider from "../Slider/Slider";
 import courses from "../../data/courses";
 import Course from "../Course/Course";
 
-const allCourses = courses.map((project) => {
-  const { id, name, description, image, link } = project;
+const allCourses = courses.map((course) => {
+  const { id, name, courseTopics, image, link } = course;
 
   return (
     <Course
       key={id}
       id={id}
       name={name}
-      description={description}
+      courseTopics={courseTopics}
       image={image}
       link={link}
     />
