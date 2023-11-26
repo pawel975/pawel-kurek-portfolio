@@ -1,0 +1,18 @@
+div.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+div.course-info div.tech {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+div.v-info div.tech * {
+  margin: 0.25rem;
+}
+div.course-info div.links {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+} /*# sourceMappingURL=ProjectInfo.css.map */

@@ -1,18 +1,18 @@
-import fyHome from "../assets/img/fy-home.png";
-import fyFood from "../assets/img/fy-food.png";
-import fyMotivation from "../assets/img/fy-motivation.png";
-import fyMeasures from "../assets/img/fy-measures.png";
-import waHome from "../assets/img/wa-home.png";
-import waModal from "../assets/img/wa-modal.png";
-import paHome from "../assets/img/pa-home.png";
-import paModalSettings from "../assets/img/pa-modal-settings.png";
-import paRules from "../assets/img/pa-rules.png";
-import paRun from "../assets/img/pa-run.png";
-import paStatistics from "../assets/img/pa-statistics.png";
-import paThemeChanged from "../assets/img/pa-theme-changed.png";
-import paAppearance from "../assets/img/pa-appearance.png";
-import ycBlankProject from "../assets/img/yc-blank-project.png";
-import ycExampleDrawing from "../assets/img/yc-blank-project.png";
+import fyHome from "../assets/projects/img/fy-home.png";
+import fyFood from "../assets/projects/img/fy-food.png";
+import fyMotivation from "../assets/projects/img/fy-motivation.png";
+import fyMeasures from "../assets/projects/img/fy-measures.png";
+import waHome from "../assets/projects/img/wa-home.png";
+import waModal from "../assets/projects/img/wa-modal.png";
+import paHome from "../assets/projects/img/pa-home.png";
+import paModalSettings from "../assets/projects/img/pa-modal-settings.png";
+import paRules from "../assets/projects/img/pa-rules.png";
+import paRun from "../assets/projects/img/pa-run.png";
+import paStatistics from "../assets/projects/img/pa-statistics.png";
+import paThemeChanged from "../assets/projects/img/pa-theme-changed.png";
+import paAppearance from "../assets/projects/img/pa-appearance.png";
+import ycBlankProject from "../assets/projects/img/yc-blank-project.png";
+import ycExampleDrawing from "../assets/projects/img/yc-blank-project.png";
 import { AiFillHtml5 as IconHTML } from "react-icons/ai";
 import {
   SiJavascript as IconJavaScript,

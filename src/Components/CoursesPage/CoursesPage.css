@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+#courses-page {
+  padding: 10rem;
+  width: 100%;
+  padding-block: 7rem;
+  background-color: #efefec;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#courses-page header {
+  margin-bottom: 1rem;
+}
+#courses-page header h2 {
+  color: #3d348b;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+} /*# sourceMappingURL=ProjectsPage.css.map */

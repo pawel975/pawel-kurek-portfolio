@@ -5,10 +5,23 @@ import {
   BiChevronRight as ArrowRight,
 } from "react-icons/bi";
 
-const Slider = ({ images, liveVersionLink }) => {
-  const allImages = images.map((image) => (
-    <img className="slider__app-image" src={image} alt="app screen shot" />
-  ));
+const Slider = ({ images, liveVersionLink, isFadedBeforeHover = true }) => {
+  let allImages = null;
+
+  let areThereMultipleImages = false;
+
+  // Checks if 'images' is array of strings or single string
+  if (!(images instanceof String || typeof images == "string")) {
+    areThereMultipleImages = true;
+
+    allImages = images.map((image) => (
+      <img className="slider__app-image" src={image} alt="app screen shot" />
+    ));
+  } else {
+    allImages = (
+      <img className="slider__app-image" src={images} alt="app screen shot" />
+    );
+  }
 
   const sliderRef = useRef();
   const btnLeft = useRef();
@@ -49,28 +62,39 @@ const Slider = ({ images, liveVersionLink }) => {
 
   return (
     <>
-      <div className="slider__container">
+      <div
+        className="slider__container"
+        style={isFadedBeforeHover ? {} : { filter: "none" }}
+      >
         <a href={liveVersionLink} target="_blank" rel="noreferrer">
           <div ref={sliderRef} className="slider__images-container">
             {allImages}
           </div>
         </a>
 
-        <button
-          ref={btnLeft}
-          className="slider__move move-left"
-          onClick={handleLeftMovement}
-        >
-          <ArrowLeft />
-        </button>
+        <>
+          <button
+            ref={btnLeft}
+            className="slider__move move-left"
+            onClick={handleLeftMovement}
+            style={{
+              visibility: `${areThereMultipleImages ? "visible" : "hidden"}`,
+            }}
+          >
+            <ArrowLeft />
+          </button>
 
-        <button
-          ref={btnRight}
-          className="slider__move move-right"
-          onClick={handleRightMovement}
-        >
-          <ArrowRight />
-        </button>
+          <button
+            ref={btnRight}
+            className="slider__move move-right"
+            onClick={handleRightMovement}
+            style={{
+              visibility: `${areThereMultipleImages ? "visible" : "hidden"}`,
+            }}
+          >
+            <ArrowRight />
+          </button>
+        </>
       </div>
     </>
   );

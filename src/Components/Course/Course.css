@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+div.project {
+  width: clamp(15rem, 80%, 90rem);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+  color: #3d348b;
+  gap: 2rem;
+}
+div.project header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3d348b;
+} /*# sourceMappingURL=Project.css.map */

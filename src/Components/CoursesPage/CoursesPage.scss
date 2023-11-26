@@ -1,0 +1,46 @@
+@use "../../variables.scss" as *;
+
+#courses-page {
+  header.subtitle {
+    h2 {
+      color: $clr-primary-light;
+      font-size: $fs-700;
+      font-family: $ff-heading;
+
+      @media (max-width: 64rem) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  h3 {
+    color: $clr-primary-light;
+    font-size: $fs-600;
+    font-family: $ff-heading;
+
+    @media (max-width: 64rem) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  padding: 10rem;
+  width: 100%;
+  @include bgColor($clr-secondary-dark, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @media (max-width: 90rem) {
+    gap: 3rem;
+    padding: 6rem;
+  }
+
+  @media (max-width: 64rem) {
+    gap: 3rem;
+    padding: 2rem;
+  }
+}

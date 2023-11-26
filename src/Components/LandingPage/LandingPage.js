@@ -2,7 +2,7 @@ import "./LandingPage.scss";
 import { useEffect } from "react";
 import gsap from "gsap";
 import countapi from "countapi-js";
-import photo from "../../assets/img/my-photo.jpg";
+import photo from "../../assets/landingPage/img/my-photo.jpg";
 
 const LandingPage = () => {
   useEffect(() => {

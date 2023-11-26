@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const About = () => {
   useEffect(() => {
     const aboutPageBiographyEls = document.querySelector(
-      ".about-page__biography",
+      ".about-page__biography"
     ).children;
 
     gsap.from(aboutPageBiographyEls, {
@@ -39,9 +39,9 @@ const About = () => {
         <p>
           I graduated <strong>mechanical engineering</strong> at{" "}
           <strong>Politechnika bydgoska</strong>. I have{" "}
-          <strong>5 years</strong> of experience as a{" "}
+          <strong>6 years</strong> of experience as a{" "}
           <strong>plotter CNC operator</strong>, and for last{" "}
-          <strong>3 years</strong> I'm also <strong>leader</strong> of my
+          <strong>4 years</strong> I'm also <strong>leader</strong> of my
           department.
         </p>
 
@@ -54,6 +54,10 @@ const About = () => {
             rel="noreferrer"
           >
             FrontendMentor.io
+          </a>
+          {", "}
+          <a href="#courses-page" rel="noreferrer">
+            Courses
           </a>{" "}
           & tutorials
         </p>

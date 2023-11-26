@@ -29,7 +29,7 @@ const Nav = () => {
         modalRef.current.style.display = "none";
       }
     },
-    [isModalOpen],
+    [isModalOpen]
   );
 
   const handleEscPress = useCallback((e) => {
@@ -70,6 +70,7 @@ const Nav = () => {
         <NavLink id="landing-page" text={"Home"} />
         <NavLink id="about-page" text={"About"} />
         <NavLink id="projects-page" text={"Projects"} />
+        <NavLink id="courses-page" text={"Courses"} />
         <NavLink id="contact" text={"Contact"} />
       </MenuModal>
     </nav>
