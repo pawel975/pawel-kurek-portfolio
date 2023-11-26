@@ -1,31 +1,29 @@
-
 div.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p.description {
+    width: 60%;
+
+    @media (max-width: 90rem) {
+      width: 100%;
+    }
+  }
+
+  div.tech {
+    * {
+      margin: 0.5rem;
+    }
+    font-size: 2rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    margin-top: auto;
+  }
 
-    p.description {
-        width: 60%;
-
-        @media (max-width: 90rem) {
-            width: 100%;
-        }
-    }
-
-    div.tech {
-        * {
-            margin: 0.5rem;
-        }
-        font-size: 2rem;
-        display: flex;
-        flex-direction: row;
-        margin-top: auto;
-
-    }
-
-    div.links {
-        display: flex;
-        flex-direction: row;
-        gap: .5rem;
-    }
+  div.links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
 }

@@ -2,7 +2,7 @@
 footer#contact {
   width: 100%;
   height: 100vh;
-  background-color: #4C3957;
+  background-color: #4c3957;
   padding: 10rem;
   display: flex;
   gap: 1rem;
@@ -29,7 +29,7 @@ footer#contact div.contact-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #F18701;
+  color: #f18701;
 }
 footer#contact div.contact-links div.contact-link-wrapper {
   width: 100%;
@@ -40,7 +40,7 @@ footer#contact div.contact-links div.contact-link-wrapper {
 footer#contact div.contact-links a.github-link {
   text-decoration: none;
   display: flex;
-  color: #F18701;
+  color: #f18701;
   gap: 1rem;
 }
 footer#contact div.contact-links a.github-link .github {
@@ -58,7 +58,7 @@ footer#contact div.contact-links div.copy-email {
   cursor: pointer;
 }
 footer#contact div.contact-links div.copy-email .email {
-  color: #F18701;
+  color: #f18701;
   width: 100%;
   height: 100%;
 }
@@ -66,4 +66,4 @@ footer#contact div.contact-links div.copy-email p {
   align-self: center;
   font-size: 1.5rem;
   font-weight: 700;
-}/*# sourceMappingURL=Footer.css.map */
+} /*# sourceMappingURL=Footer.css.map */

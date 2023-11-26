@@ -1,21 +1,21 @@
-@use '../../variables.scss' as *;
+@use "../../variables.scss" as *;
 
 a.source-link {
-    text-decoration: none;
-    @include fontColor($clr-primary-dark, 1);
-    @include bgColor($clr-accent, 1);
-    font-weight: 900;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5rem;
-    border-radius: 50rem;
-    font-size: $fs-200;
-    transition: 0.15s ease-in-out;
+  text-decoration: none;
+  @include fontColor($clr-primary-dark, 1);
+  @include bgColor($clr-accent, 1);
+  font-weight: 900;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 50rem;
+  font-size: $fs-200;
+  transition: 0.15s ease-in-out;
 
-    &:hover,
-    &:focus {
-        background-color: darken($color: $clr-accent, $amount: 40%);
-        outline: 0.1rem solid white;
-        @include fontColor($clr-primary-light, 1);  
-    }
+  &:hover,
+  &:focus {
+    background-color: darken($color: $clr-accent, $amount: 40%);
+    outline: 0.1rem solid white;
+    @include fontColor($clr-primary-light, 1);
+  }
 }

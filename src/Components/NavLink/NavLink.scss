@@ -1,42 +1,42 @@
-@use '../../variables.scss' as *;
+@use "../../variables.scss" as *;
 
 a.nav-link {
-    padding: .5rem;
-    font-size: $fs-300;
-    font-weight: 700;
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.1s ease-in-out;
-    color: $clr-accent;
-    border-radius: 0.5rem;
-    cursor: pointer;
+  padding: 0.5rem;
+  font-size: $fs-300;
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.1s ease-in-out;
+  color: $clr-accent;
+  border-radius: 0.5rem;
+  cursor: pointer;
 
-    @keyframes tilt {
-        0% {
-            transform: scale(1.0);
-        }
-        5% {
-            transform: scale(1.02);
-        }
-        100% {
-            transform: scale(1.0);
-        }
+  @keyframes tilt {
+    0% {
+      transform: scale(1);
     }
-
-    &:hover,
-    &:focus {
-        animation: tilt alternate 0.5s;
-        color: $clr-primary-light;
-        background-color: darken($color: $clr-accent, $amount: 40%);
-
-        @include fontColor($clr-primary-light, 1);  
-        @media (max-width: 64rem) {
-            animation: none;
-        }
+    5% {
+      transform: scale(1.02);
     }
+    100% {
+      transform: scale(1);
+    }
+  }
 
+  &:hover,
+  &:focus {
+    animation: tilt alternate 0.5s;
+    color: $clr-primary-light;
+    background-color: darken($color: $clr-accent, $amount: 40%);
+
+    @include fontColor($clr-primary-light, 1);
     @media (max-width: 64rem) {
-        font-size: $fs-600;
+      animation: none;
     }
+  }
+
+  @media (max-width: 64rem) {
+    font-size: $fs-600;
+  }
 }

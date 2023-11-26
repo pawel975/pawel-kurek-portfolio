@@ -19,7 +19,7 @@ div.popup-container {
   border-radius: 0.5rem;
   border-top: 5px solid #44694f;
   -webkit-animation: 3s showPopup;
-          animation: 3s showPopup;
+  animation: 3s showPopup;
   opacity: 0;
 }
 @-webkit-keyframes showPopup {
@@ -49,4 +49,4 @@ div.popup-container {
   100% {
     opacity: 0;
   }
-}/*# sourceMappingURL=PopupMessage.css.map */
+} /*# sourceMappingURL=PopupMessage.css.map */

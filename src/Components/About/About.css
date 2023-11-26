@@ -25,10 +25,10 @@
   font-size: 1.25rem;
 }
 #about-page header.about-page__biography p strong {
-  color: #F18701;
+  color: #f18701;
   font-weight: 900;
   -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  text-decoration-style: dotted;
 }
 #about-page header.about-page__biography p a {
   color: #8fb79b;
@@ -37,4 +37,4 @@
   width: 100%;
   height: 100%;
   color: rgba(239, 239, 236, 0.3);
-}/*# sourceMappingURL=About.css.map */
+} /*# sourceMappingURL=About.css.map */

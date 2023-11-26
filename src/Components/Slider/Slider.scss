@@ -1,69 +1,66 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
 div.slider__container {
-    filter: grayscale(1) brightness(0.2);
-    position: relative;
-    width: 35rem;
-    flex-shrink: 0;
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    transition: .3s ease-in-out;
+  filter: grayscale(1) brightness(0.2);
+  position: relative;
+  width: 35rem;
+  flex-shrink: 0;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
 
-    @media (max-width: 64rem) {
-        width: 100%;
+  @media (max-width: 64rem) {
+    width: 100%;
+  }
+
+  div.slider__images-container {
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    img.slider__app-image {
+      width: 100vw;
+      height: 100%;
     }
 
-    div.slider__images-container {
-        top: 0%;
-        left: 0%;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
+    transition: 0.3s ease-in-out;
+  }
 
-        img.slider__app-image {
-            width: 100vw;
-            height: 100%;
-        }
+  button.slider__move {
+    position: absolute;
+    z-index: 5;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
 
-        transition: 0.3s ease-in-out;
+    &:disabled {
+      opacity: 0.5;
     }
+  }
 
-    button.slider__move {
-        position: absolute;
-        z-index: 5;
-        border: none;
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        text-align: center;
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        border-radius: 50%;
+  .move-left {
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 2%;
+  }
 
-        &:disabled {
-            opacity: 0.5;
-        }
+  .move-right {
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 2%;
+  }
 
-    }
-
-    .move-left {
-        transform: translate(0, -50%);
-        top: 50%;
-        left: 2%;
-    }
-
-    .move-right {
-        transform: translate(0, -50%);
-        top: 50%;
-        right: 2%;
-    }
-
-    &:hover {
-        filter: grayscale(0) brightness(1);
-    }
-
-
+  &:hover {
+    filter: grayscale(0) brightness(1);
+  }
 }

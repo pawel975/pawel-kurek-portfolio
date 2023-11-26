@@ -1,28 +1,27 @@
-@use '../../variables.scss' as *;
+@use "../../variables.scss" as *;
 
 div.project {
-    width: clamp(15rem, 100%, 90rem);
-    height: fit-content;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: row;
-    font-size: $fs-300;
+  width: clamp(15rem, 100%, 90rem);
+  height: fit-content;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: $fs-300;
+  @include fontColor($clr-primary-light, 1);
+  gap: 2rem;
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 64rem) {
+    flex-direction: column;
+  }
+
+  header {
+    font-family: $ff-heading;
+    font-size: $fs-400;
+    font-weight: 700;
     @include fontColor($clr-primary-light, 1);
-    gap: 2rem;
-
-    @media (orientation: portrait) {
-        flex-direction: column;
-    }
-
-    @media (max-width: 64rem) {
-        flex-direction: column;
-    }
-    
-    header {
-        font-family: $ff-heading;
-        font-size: $fs-400;
-        font-weight: 700;
-        @include fontColor($clr-primary-light, 1);
-    
-    }
+  }
 }

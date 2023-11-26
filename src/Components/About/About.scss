@@ -1,68 +1,65 @@
-@use '../../variables' as *;
+@use "../../variables" as *;
 
 #about-page {
+  height: 100vh;
+  width: 100%;
+  background-color: $clr-secondary-dark;
+  padding: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 
-    height: 100vh;
+  @media (orientation: portrait) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 90rem) {
+    gap: 3rem;
+    padding: 6rem;
+  }
+
+  @media (max-width: 64rem) {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 0;
+  }
+
+  header.about-page__biography {
+    flex: 1;
     width: 100%;
-    background-color: $clr-secondary-dark;
-    padding: 10rem;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
 
-    @media (orientation: portrait) {
-        flex-direction: column;
+    h2 {
+      font-size: $fs-700;
+      color: $clr-primary-light;
+      font-family: $ff-heading;
     }
 
-    @media (max-width: 90rem) {
-        gap: 3rem;
-        padding: 6rem;
+    p {
+      color: $clr-primary-light;
+      font-size: $fs-300;
+
+      strong {
+        color: $clr-accent;
+        font-weight: 900;
+        text-decoration-style: dotted;
+      }
+
+      a {
+        color: lighten($clr-popup, 30%);
+      }
     }
+  }
 
-    @media (max-width: 64rem) {
-        flex-direction: column;
-        padding: 2rem;
-        gap: 0;
-    }
-
-    header.about-page__biography {
-        flex: 1;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        h2 {
-            font-size: $fs-700;
-            color: $clr-primary-light;
-            font-family: $ff-heading;
-        }
-
-
-        p {
-            color: $clr-primary-light;
-            font-size: $fs-300;
-
-            strong {
-                color: $clr-accent;
-                font-weight: 900;
-                text-decoration-style: dotted;
-            }
-
-            a {
-                color: lighten($clr-popup, 30%);
-            }
-        }
-    }
-
-    .about-page__icon {
-        flex: 1;
-        height: 100%;
-        width: clamp(10rem, 100%, 30rem);
-        margin: auto;
-        @include fontColor($clr-primary-light, 0.3);
-
-    }
+  .about-page__icon {
+    flex: 1;
+    height: 100%;
+    width: clamp(10rem, 100%, 30rem);
+    margin: auto;
+    @include fontColor($clr-primary-light, 0.3);
+  }
 }

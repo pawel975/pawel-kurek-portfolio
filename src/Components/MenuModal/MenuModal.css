@@ -11,7 +11,7 @@ div.menu-modal {
   padding: 1rem;
   padding-top: 5rem;
   -webkit-animation: show 0.3s ease-in-out;
-          animation: show 0.3s ease-in-out;
+  animation: show 0.3s ease-in-out;
 }
 @-webkit-keyframes show {
   0% {
@@ -36,4 +36,4 @@ div.menu-modal {
     height: 30rem;
     opacity: 1;
   }
-}/*# sourceMappingURL=MenuModal.css.map */
+} /*# sourceMappingURL=MenuModal.css.map */

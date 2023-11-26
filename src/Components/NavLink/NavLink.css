@@ -7,7 +7,7 @@ a.nav-link {
   text-decoration: none;
   text-align: center;
   transition: 0.1s ease-in-out;
-  color: #F18701;
+  color: #f18701;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -50,7 +50,7 @@ a.nav-link {
 }
 a.nav-link:hover {
   -webkit-animation: tilt alternate 0.5s;
-          animation: tilt alternate 0.5s;
+  animation: tilt alternate 0.5s;
   color: #efefec;
-  background-color: #F18701;
-}/*# sourceMappingURL=NavLink.css.map */
+  background-color: #f18701;
+} /*# sourceMappingURL=NavLink.css.map */
