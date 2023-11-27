@@ -20,7 +20,7 @@ export const Nav = () => {
     (e) => {
       if (!isModalOpen) return;
 
-      if (!(modalRef.current === e.target)) {
+      if (!modalRef.current === e.target) {
         setIsModalOpen(false);
         if (modalRef.current) modalRef.current.style.display = "none";
       }
@@ -29,6 +29,7 @@ export const Nav = () => {
   );
 
   const handleEscPress = useCallback((e) => {
+    // keyCode for ESC key
     if (e.keyCode === 27) {
       setIsModalOpen(false);
       if (modalRef.current) modalRef.current.style.display = "none";
