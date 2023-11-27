@@ -1,8 +1,8 @@
-import NavLink from "../NavLink/NavLink";
+import NavLink from "../NavLink/NavLink.tsx";
 import "./Nav.scss";
 import { HiMenuAlt3 as ModalOpen } from "react-icons/hi";
 import { CgClose as ModalClose } from "react-icons/cg";
-import MenuModal from "../MenuModal/MenuModal";
+import MenuModal from "../MenuModal/MenuModal.tsx";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const Nav = () => {

@@ -1,8 +1,8 @@
 import "./CoursesPage.scss";
 import { useEffect } from "react";
 import gsap from "gsap";
-import courses from "../../data/courses";
-import Course from "../Course/Course";
+import courses from "../../data/courses.ts";
+import Course from "../Course/Course.tsx";
 
 const allCourses = courses.map((course) => {
   const { id, name, courseTopics, image, link } = course;
@@ -21,7 +21,7 @@ const allCourses = courses.map((course) => {
 
 const CoursesPage = () => {
   useEffect(() => {
-    const projectsPageEls = document.querySelector("#courses-page").children;
+    const projectsPageEls = document.querySelector("#courses-page")!.children;
 
     [...projectsPageEls].forEach((element) => {
       gsap.from(element, {

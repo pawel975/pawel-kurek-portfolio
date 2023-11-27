@@ -3,7 +3,7 @@ import "./Footer.scss";
 import { AiFillGithub as GithubIcon } from "react-icons/ai";
 import { MdEmail as MailIcon } from "react-icons/md";
 import { BsLinkedin as LinkedInIcon } from "react-icons/bs";
-import PopupMessage from "../PopupMessage/PopupMessage";
+import PopupMessage from "../PopupMessage/PopupMessage.tsx";
 import gsap from "gsap";
 
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
       opacity: 0,
     });
 
-    const contactEls = document.querySelector(".contact-links").children;
+    const contactEls = document.querySelector(".contact-links")!.children;
 
     gsap.from(contactEls, {
       scrollTrigger: {

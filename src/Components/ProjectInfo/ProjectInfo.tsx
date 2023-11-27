@@ -1,4 +1,4 @@
-import SourceLink from "../SourceLink/SourceLink";
+import SourceLink from "../SourceLink/SourceLink.tsx";
 import "./ProjectInfo.scss";
 
 const ProjectInfo = ({
@@ -7,8 +7,8 @@ const ProjectInfo = ({
   techStack,
   githubLink,
   liveVersionLink,
-}) => {
-  const allTechs = techStack.map((tech) => tech);
+}: any) => {
+  const allTechs = techStack.map((tech: any) => tech);
 
   return (
     <div className="project-info">

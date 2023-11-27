@@ -1,6 +1,6 @@
-import Footer from "../Footer/Footer";
-import Main from "../Main/Main";
-import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer.tsx";
+import Main from "../Main/Main.tsx";
+import Nav from "../Nav/Nav.tsx";
 import "./App.scss";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import gsap from "gsap";

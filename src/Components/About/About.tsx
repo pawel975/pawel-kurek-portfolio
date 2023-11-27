@@ -7,7 +7,7 @@ const About = () => {
   useEffect(() => {
     const aboutPageBiographyEls = document.querySelector(
       ".about-page__biography"
-    ).children;
+    )!.children;
 
     gsap.from(aboutPageBiographyEls, {
       scrollTrigger: {

@@ -1,5 +1,5 @@
-import ProjectInfo from "../ProjectInfo/ProjectInfo";
-import Slider from "../Slider/Slider";
+import ProjectInfo from "../ProjectInfo/ProjectInfo.tsx";
+import Slider from "../Slider/Slider.tsx";
 import "./Project.scss";
 
 const Project = ({
@@ -11,7 +11,7 @@ const Project = ({
   techStack,
   githubLink,
   liveVersionLink,
-}) => {
+}: any) => {
   return (
     <div key={key} id={id} className="project">
       <Slider images={images} liveVersionLink={liveVersionLink} />

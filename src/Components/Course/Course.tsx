@@ -1,8 +1,8 @@
-import CourseInfo from "../CourseInfo/CourseInfo";
-import Slider from "../Slider/Slider";
+import CourseInfo from "../CourseInfo/CourseInfo.tsx";
+import Slider from "../Slider/Slider.tsx";
 import "./Course.scss";
 
-const Course = ({ key, id, name, courseTopics, image, link }) => {
+const Course = ({ key, id, name, courseTopics, image, link }: any) => {
   return (
     <div key={key} id={id} className="course">
       <Slider
@@ -10,7 +10,7 @@ const Course = ({ key, id, name, courseTopics, image, link }) => {
         liveVersionLink={link}
         isFadedBeforeHover={false}
       />
-      <CourseInfo name={name} courseTopics={courseTopics} link={link} />
+      <CourseInfo name={name} courseTopics={courseTopics} />
     </div>
   );
 };

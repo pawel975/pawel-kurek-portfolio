@@ -1,7 +1,7 @@
 import "./CourseInfo.scss";
 
-const CourseInfo = ({ name, courseTopics }) => {
-  const allTopics = courseTopics.map((topic) => (
+const CourseInfo = ({ name, courseTopics }: any) => {
+  const allTopics = courseTopics.map((topic: any) => (
     <li className="topic">{topic}</li>
   ));
   return (
