@@ -9,6 +9,11 @@
     "moduleResolution": "bundler",
     "target": "es2015",
 
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"]
+    },
+
     "allowJs": true,
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
@@ -21,5 +26,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"]
 }
