@@ -1,6 +1,9 @@
 import "./NavLink.scss";
-
-const NavLink = ({ text, id }) => {
+interface NavLinkInterface {
+  text: string;
+  id: string;
+}
+const NavLink = ({ text, id }: NavLinkInterface) => {
   return (
     <a className="nav-link" href={`#${id}`}>
       {text}
