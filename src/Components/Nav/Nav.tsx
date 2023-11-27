@@ -20,10 +20,8 @@ export const Nav = () => {
     (e) => {
       if (!isModalOpen) return;
 
-      if (!modalRef.current === e.target) {
-        setIsModalOpen(false);
-        if (modalRef.current) modalRef.current.style.display = "none";
-      }
+      setIsModalOpen(false);
+      if (modalRef.current) modalRef.current.style.display = "none";
     },
     [isModalOpen]
   );
