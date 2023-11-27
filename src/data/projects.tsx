@@ -12,7 +12,7 @@ import paStatistics from "../assets/projects/img/pa-statistics.png";
 import paThemeChanged from "../assets/projects/img/pa-theme-changed.png";
 import paAppearance from "../assets/projects/img/pa-appearance.png";
 import ycBlankProject from "../assets/projects/img/yc-blank-project.png";
-import ycExampleDrawing from "../assets/projects/img/yc-blank-project.png";
+import ycExampleDrawing from "../assets/projects/img/yc-example-drawing.png";
 import { AiFillHtml5 as IconHTML } from "react-icons/ai";
 import {
   SiJavascript as IconJavaScript,

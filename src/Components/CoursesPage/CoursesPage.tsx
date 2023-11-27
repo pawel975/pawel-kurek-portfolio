@@ -5,7 +5,7 @@ import courses from "../../data/courses.ts";
 import Course from "../Course/Course.tsx";
 
 const allCourses = courses.map((course) => {
-  const { id, name, courseTopics, image, link } = course;
+  const { id, name, courseTopics, images, link } = course;
 
   return (
     <Course
@@ -13,7 +13,7 @@ const allCourses = courses.map((course) => {
       id={id}
       name={name}
       courseTopics={courseTopics}
-      image={image}
+      images={images}
       link={link}
     />
   );

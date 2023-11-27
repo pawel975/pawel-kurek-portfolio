@@ -1,6 +1,9 @@
 import "./CourseInfo.scss";
-
-const CourseInfo = ({ name, courseTopics }: any) => {
+interface CourseInfoInterface {
+  name: string;
+  courseTopics: string[];
+}
+const CourseInfo = ({ name, courseTopics }: CourseInfoInterface) => {
   const allTopics = courseTopics.map((topic: any) => (
     <li className="topic">{topic}</li>
   ));

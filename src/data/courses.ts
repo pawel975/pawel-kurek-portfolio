@@ -24,7 +24,7 @@ const courses = [
       "CORS policy configuration",
       "Azure cloud deployment\n",
     ],
-    image: aspNetCoreCertificate,
+    images: [aspNetCoreCertificate],
     link: "https://www.udemy.com/certificate/UC-19234d21-5100-4750-a465-62287d41205d/",
   },
   {
@@ -38,7 +38,7 @@ const courses = [
       "Preparation for further learning in frameworks like React, Angular, or Vue",
       "Introduction to back-end development with Node.js\n",
     ],
-    image: jsCertificate,
+    images: [jsCertificate],
     link: "https://www.udemy.com/certificate/UC-f111015c-f5f3-424c-a73e-bf769273c581/",
   },
   {
@@ -56,7 +56,7 @@ const courses = [
       "Access modifiers, methods",
       "User interaction, .NET CLI\n",
     ],
-    image: csCertificate,
+    images: [csCertificate],
     link: "https://www.udemy.com/certificate/UC-402a8be7-505b-4d7f-bf6b-3e178995fe53/",
   },
 ];

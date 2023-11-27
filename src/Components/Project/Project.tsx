@@ -18,7 +18,11 @@ const Project = ({
 } & ProjectInterface) => {
   return (
     <div key={key} id={id as unknown as string} className="project">
-      <Slider images={images} liveVersionLink={liveVersionLink} />
+      <Slider
+        images={images}
+        liveVersionLink={liveVersionLink}
+        isFadedBeforeHover={true}
+      />
       <ProjectInfo
         name={name}
         description={description}

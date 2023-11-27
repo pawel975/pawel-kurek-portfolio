@@ -1,6 +1,11 @@
 import "./SourceLink.scss";
 
-const SourceLink = ({ link, name }) => {
+interface SourceLinkInterface {
+  link: string;
+  name: string;
+}
+
+const SourceLink = ({ link, name }: SourceLinkInterface) => {
   return (
     <a target="_blank" href={link} className="source-link" rel="noreferrer">
       {name}

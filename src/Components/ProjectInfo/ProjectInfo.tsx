@@ -1,5 +1,14 @@
+import React from "react";
 import SourceLink from "../SourceLink/SourceLink.tsx";
 import "./ProjectInfo.scss";
+
+interface ProjectInfoInterface {
+  name: string;
+  description: string;
+  techStack: React.ReactElement[];
+  githubLink: string;
+  liveVersionLink: string;
+}
 
 const ProjectInfo = ({
   name,
@@ -7,8 +16,8 @@ const ProjectInfo = ({
   techStack,
   githubLink,
   liveVersionLink,
-}: any) => {
-  const allTechs = techStack.map((tech: any) => tech);
+}: ProjectInfoInterface) => {
+  const allTechs = techStack.map((tech) => tech);
 
   return (
     <div className="project-info">
