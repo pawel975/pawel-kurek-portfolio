@@ -1,6 +1,6 @@
 import "./ProjectsPage.scss";
-import projects from "../../data/projects";
-import Project from "../Project/Project";
+import projects from "../../data/projects.tsx";
+import Project from "../Project/Project.tsx";
 import { useEffect } from "react";
 import gsap from "gsap";
 
@@ -23,6 +23,7 @@ const finishedProjects = projects.map((project) => {
       key={id}
       id={id}
       name={name}
+      isFinished={isFinished}
       description={description}
       images={images}
       techStack={techStack}
@@ -51,6 +52,7 @@ const inProgressProjects = projects.map((project) => {
       key={id}
       id={id}
       name={name}
+      isFinished={isFinished}
       description={description}
       images={images}
       techStack={techStack}
@@ -62,7 +64,7 @@ const inProgressProjects = projects.map((project) => {
 
 const ProjectsPage = () => {
   useEffect(() => {
-    const projectsPageEls = document.querySelector("#projects-page").children;
+    const projectsPageEls = document.querySelector("#projects-page")!.children;
 
     [...projectsPageEls].forEach((element) => {
       gsap.from(element, {

@@ -12,7 +12,7 @@ import paStatistics from "../assets/projects/img/pa-statistics.png";
 import paThemeChanged from "../assets/projects/img/pa-theme-changed.png";
 import paAppearance from "../assets/projects/img/pa-appearance.png";
 import ycBlankProject from "../assets/projects/img/yc-blank-project.png";
-import ycExampleDrawing from "../assets/projects/img/yc-blank-project.png";
+import ycExampleDrawing from "../assets/projects/img/yc-example-drawing.png";
 import { AiFillHtml5 as IconHTML } from "react-icons/ai";
 import {
   SiJavascript as IconJavaScript,
@@ -25,7 +25,18 @@ import {
 import { GrReactjs as IconReact } from "react-icons/gr";
 import { DiSass as IconSass } from "react-icons/di";
 
-const projects = [
+export interface ProjectInterface {
+  id: number;
+  isFinished: boolean;
+  name: string;
+  description: string;
+  images: string[];
+  techStack: React.ReactElement[];
+  githubLink: string;
+  liveVersionLink: string;
+}
+
+const projects: ProjectInterface[] = [
   {
     id: 1,
     isFinished: true,

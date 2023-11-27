@@ -1,15 +1,10 @@
 import "./LandingPage.scss";
 import { useEffect } from "react";
 import gsap from "gsap";
-import countapi from "countapi-js";
 import photo from "../../assets/landingPage/img/my-photo.jpg";
 
 const LandingPage = () => {
   useEffect(() => {
-    countapi.visits("global").then((result) => {
-      console.log(result.value);
-    });
-
     // Animate heading
     gsap.from(".landing-page__welcome-heading", {
       scrollTrigger: {
