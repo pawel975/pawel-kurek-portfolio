@@ -23,6 +23,7 @@ const finishedProjects = projects.map((project) => {
       key={id}
       id={id}
       name={name}
+      isFinished={isFinished}
       description={description}
       images={images}
       techStack={techStack}
@@ -51,6 +52,7 @@ const inProgressProjects = projects.map((project) => {
       key={id}
       id={id}
       name={name}
+      isFinished={isFinished}
       description={description}
       images={images}
       techStack={techStack}

@@ -1,3 +1,4 @@
+import { ProjectInterface } from "data/projects.tsx";
 import ProjectInfo from "../ProjectInfo/ProjectInfo.tsx";
 import Slider from "../Slider/Slider.tsx";
 import "./Project.scss";
@@ -11,9 +12,12 @@ const Project = ({
   techStack,
   githubLink,
   liveVersionLink,
-}: any) => {
+}: {
+  key: number;
+  id: number;
+} & ProjectInterface) => {
   return (
-    <div key={key} id={id} className="project">
+    <div key={key} id={id as unknown as string} className="project">
       <Slider images={images} liveVersionLink={liveVersionLink} />
       <ProjectInfo
         name={name}

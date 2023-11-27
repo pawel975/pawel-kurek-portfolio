@@ -25,7 +25,18 @@ import {
 import { GrReactjs as IconReact } from "react-icons/gr";
 import { DiSass as IconSass } from "react-icons/di";
 
-const projects = [
+export interface ProjectInterface {
+  id: number;
+  isFinished: boolean;
+  name: string;
+  description: string;
+  images: string[];
+  techStack: React.ReactElement[];
+  githubLink: string;
+  liveVersionLink: string;
+}
+
+const projects: ProjectInterface[] = [
   {
     id: 1,
     isFinished: true,

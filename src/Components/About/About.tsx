@@ -30,19 +30,24 @@ const About = () => {
     });
   });
 
+  const getYearsOfExperience = () => {
+    return Math.floor(
+      (Date.now() - Date.parse("2017-01-23")) / 1000 / 60 / 60 / 24 / 365.25
+    );
+  };
+
   return (
     <section id="about-page">
       <header className="about-page__biography">
         <h2>About me</h2>
 
-        {/**TODO: Make years of experience dynamic calculated */}
         <p>
-          I graduated <strong>mechanical engineering</strong> at{" "}
-          <strong>Politechnika bydgoska</strong>. I have{" "}
-          <strong>6 years</strong> of experience as a{" "}
-          <strong>plotter CNC operator</strong>, and for last{" "}
-          <strong>4 years</strong> I'm also <strong>leader</strong> of my
-          department.
+          I graduated <strong>mechanical engineering</strong> at
+          <strong> Politechnika bydgoska</strong>. I have
+          <strong>{" " + getYearsOfExperience()} years</strong> of experience as
+          a <strong>plotter CNC operator</strong>, and for last
+          <strong>{" " + (getYearsOfExperience() - 2)} years</strong> I'm also
+          <strong> leader</strong> of my department.
         </p>
 
         <p>
