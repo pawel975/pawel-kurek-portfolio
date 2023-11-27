@@ -1,4 +1,4 @@
-import fyHome from "@assets/projects/img/fy-home.png";
+import fyHome from "../assets/projects/img/fy-home.png";
 import fyFood from "../assets/projects/img/fy-food.png";
 import fyMotivation from "../assets/projects/img/fy-motivation.png";
 import fyMeasures from "../assets/projects/img/fy-measures.png";

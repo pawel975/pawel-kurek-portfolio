@@ -5,13 +5,12 @@ import { CgClose as ModalClose } from "react-icons/cg";
 import MenuModal from "../MenuModal/MenuModal.tsx";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const Nav = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const modalRef = useRef();
-  const btnOpenRef = useRef();
+export const Nav = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const modalRef: React.MutableRefObject<HTMLDivElement | undefined> = useRef();
 
   const handleModalOpen = () => {
-    if (!isModalOpen) {
+    if (!isModalOpen && modalRef.current) {
       setIsModalOpen(true);
       modalRef.current.style.display = "flex";
     }
@@ -21,12 +20,9 @@ const Nav = () => {
     (e) => {
       if (!isModalOpen) return;
 
-      if (
-        !(modalRef.current === e.target) &&
-        !(btnOpenRef.current === e.target)
-      ) {
+      if (!(modalRef.current === e.target)) {
         setIsModalOpen(false);
-        modalRef.current.style.display = "none";
+        if (modalRef.current) modalRef.current.style.display = "none";
       }
     },
     [isModalOpen]
@@ -35,7 +31,7 @@ const Nav = () => {
   const handleEscPress = useCallback((e) => {
     if (e.keyCode === 27) {
       setIsModalOpen(false);
-      modalRef.current.style.display = "none";
+      if (modalRef.current) modalRef.current.style.display = "none";
     }
   }, []);
 
@@ -51,17 +47,12 @@ const Nav = () => {
 
   return (
     <nav>
-      {/* Switches icons based on modal visibility state*/}
       {isModalOpen ? (
         <button onClick={handleModalClose} className="toggle-menu-modal-button">
           <ModalClose className="toggle-menu-modal-icon" />
         </button>
       ) : (
-        <button
-          ref={btnOpenRef}
-          onClick={handleModalOpen}
-          className="toggle-menu-modal-button"
-        >
+        <button onClick={handleModalOpen} className="toggle-menu-modal-button">
           <ModalOpen className="toggle-menu-modal-icon" />
         </button>
       )}
