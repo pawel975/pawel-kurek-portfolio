@@ -5,9 +5,7 @@ import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    const aboutPageBiographyEls = document.querySelector(
-      ".about-page__biography"
-    )!.children;
+    const aboutPageBiographyEls = document.querySelector(".about-page__biography")!.children;
 
     gsap.from(aboutPageBiographyEls, {
       scrollTrigger: {
@@ -31,9 +29,7 @@ const About = () => {
   });
 
   const getYearsOfExperience = () => {
-    return Math.floor(
-      (Date.now() - Date.parse("2017-01-23")) / 1000 / 60 / 60 / 24 / 365.25
-    );
+    return Math.floor((Date.now() - Date.parse("2017-01-23")) / 1000 / 60 / 60 / 24 / 365.25);
   };
 
   return (
@@ -44,32 +40,15 @@ const About = () => {
         <p>
           I graduated <strong>mechanical engineering</strong> at
           <strong> Politechnika bydgoska</strong>. I have
-          <strong>{" " + getYearsOfExperience()} years</strong> of experience as
-          a <strong>plotter CNC operator</strong>, and for last
+          <strong>{" " + getYearsOfExperience()} years</strong> of experience as a <strong>plotter CNC operator</strong>
+          , and for last
           <strong>{" " + (getYearsOfExperience() - 2)} years</strong> I'm also
           <strong> leader</strong> of my department.
         </p>
 
         <p>
-          I'm about to switch my career into programming. I created multiple
-          personal projects of my own ideas and few based on challenges from{" "}
-          <a
-            target="_blank"
-            href="https://www.frontendmentor.io/profile/pawel975"
-            rel="noreferrer"
-          >
-            FrontendMentor.io
-          </a>
-          {", "}
-          <a href="#courses-page" rel="noreferrer">
-            Courses
-          </a>{" "}
-          & tutorials
-        </p>
-
-        <p>
-          I'm eager to get new knowledge and I hope that your company will
-          provide it for me!
+          I am currently a <strong>C# developer</strong> working on webservices using <strong>ASP.NET Core</strong> and
+          desktop applications in <strong>Windows Forms</strong>.
         </p>
       </header>
       <MechanicsIcon className="about-page__icon" />
